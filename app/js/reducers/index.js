@@ -1,14 +1,13 @@
 import {combineReducers} from 'redux';
 
-import windowData from './windowData';
-import reducer1 from './reducer1';
+import location from './location';
 //import other sectional reducers
 
 
 
 const rootReducer = combineReducers({
-    reducer1,
-    windowData
+    location
+
 });
 
 export default rootReducer;

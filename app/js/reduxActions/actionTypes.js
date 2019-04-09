@@ -6,7 +6,8 @@ aTypes.sync =  {
 
 //Async actions return a promise that resolves to an action. These will be manually bound to dispatch within the .then within the function.
 aTypes.async = {
-    loadLocalStorage: 'LOAD_LOCAL_STORAGE'
+    loadLocalStorage: 'LOAD_LOCAL_STORAGE',
+    getGeolocation: 'GET_GEOLOCATION'
 }
 
 const {async, sync} = aTypes;

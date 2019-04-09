@@ -2,7 +2,7 @@
 // React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './reactComponents/ReactApp';
+import ReactApp from './reactComponents/ReactApp';
 
 //Redux
 import { Provider } from "react-redux";

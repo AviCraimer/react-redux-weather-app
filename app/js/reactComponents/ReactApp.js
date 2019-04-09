@@ -7,6 +7,7 @@ import {loadFaveRidings } from '../reduxActions/asyncActions';
 import {windowResize} from '../reduxActions/syncActions';
 
 //React Components
+import Geolocator from './Geolocator';
 
 class ReactApp extends React.Component {
 
@@ -36,9 +37,12 @@ class ReactApp extends React.Component {
 
     render() {
         return (
-        <main>
-            <h1>Hello World</h1>
-        </main>
+        <React.Fragment>
+            <Geolocator />
+            <main>
+                <h1>Hello World</h1>
+            </main>
+        </React.Fragment>
       )
     }
   }
