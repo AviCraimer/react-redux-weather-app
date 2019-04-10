@@ -6,4 +6,4 @@ The default gulp task builds the project without minimizing JS and CSS, and usin
 For production build, run the **gulp prod** task.
 
 # Browser Security Issues with Geolocation
-The geolocation seems to be blocked in some browsers when running from local host, it should work on all modern browsers when it is deployed to a HTTPS url. It works for me in Chrome on both Mac and Windows, and in Firefox on Windows but not on Mac. 
+The geolocation seems to be blocked in some browsers when running from local host, it should work on all modern browsers when it is deployed to a HTTPS url. It works from local host for me in Chrome on both Mac and Windows, and in Firefox on Windows but not on Mac. 
