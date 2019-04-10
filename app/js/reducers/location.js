@@ -4,10 +4,12 @@ import {asyncTypes, syncTypes} from '../reduxActions/actionTypes';
 const location = function (state, action) {
     const initialState = {
         geopoint: {
-            long: 0,
-            lat: 0
+            lon: null,
+            lat: null
         },
-        selectedCityId: 0
+        city: {
+            name: ''
+        }
 
     }
 
@@ -18,8 +20,9 @@ const location = function (state, action) {
             const {geopoint} = action;
             return {...state, geopoint}
         }
-
-
+        case asyncTypes.getLocalWeatherData: {
+            return {...state, ...action.location}
+        }
     }
 
     return state;

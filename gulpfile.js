@@ -244,7 +244,7 @@ gulp.task('watch', () => {
 //***GULP DEFAULT TASK***
 //Note this task doesn't copy images, to copy and optimize images, run 'gulp images'
 
-gulp.task('default', series(clean(), parallel('styles', 'js', copyPolyfill, 'html', 'data'), parallel('browserSyncInit', 'watch') ) );
+gulp.task('default', series(clean(), parallel('styles', 'js', 'html', 'data', 'images'), parallel('browserSyncInit', 'watch') ) );
 
 //***GULP PROD TASK***
 //This task generates production-ready dist folder including image optimization, minified JS, and React production build
@@ -257,7 +257,7 @@ gulp.task('prod', series(
     minifyScripts = true;
     return done();
     }),
-    parallel('styles', 'js', copyPolyfill, 'html', 'images', 'data'),
+    parallel('styles', 'js', 'html', 'images', 'data', 'images'),
     parallel('browserSyncInit', 'watch')  )
 );
 

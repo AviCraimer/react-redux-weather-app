@@ -1,12 +1,14 @@
 import {combineReducers} from 'redux';
 
 import location from './location';
+import weatherInfo from './weatherInfo';
 //import other sectional reducers
 
 
 
 const rootReducer = combineReducers({
-    location
+    location,
+    weatherInfo
 
 });
 

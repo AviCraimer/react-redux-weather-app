@@ -1,0 +1,41 @@
+.main {
+
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__header {
+
+
+        h1 {
+            color: $accent-color;
+            font-size: 2.6rem;
+            margin-right: 30px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-top: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+    }
+
+
+
+}//End of Main
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

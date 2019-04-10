@@ -1,0 +1,18 @@
+.refresh-weather-btn {
+    // flex-basis: 100%;
+    margin: 20px  calc(50% - 165px);
+    color: $body-bg;
+    background-color: $main-color;
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    box-shadow: 3px 3px 1px 0px $accent-color;
+
+    @media (max-width: 540px) {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        margin: 20px calc(50% - 116px);
+
+    }
+
+
+}

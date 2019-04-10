@@ -1,0 +1,27 @@
+.weather-display {
+    margin: 10px 0;
+    max-width: 500px;
+
+    p {
+        margin: 19px 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        &__image-div {
+            width: 60px;
+            flex-shrink: 0;
+            margin-right: 14px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+}

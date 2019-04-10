@@ -19,6 +19,16 @@ fn.bindFunctions = function (_this, funcNamesArr) {
     }
 }
 
+fn.kelvinToCelcius = function (tempInKelvin) {
+    return tempInKelvin - 273.15
+}
+
+fn.captilizeFirstChar = function (str) {
+    str  = str.trim().split('');
+    str[0] = str[0].toUpperCase();
+    return str.join('');
+}
+
 
 fn.listItemsToStringWithAnd = function (list) {
     const readyToJoin = list.map((item, index, list) => {

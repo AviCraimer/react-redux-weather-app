@@ -20,7 +20,7 @@ const getGeolocation = () => {
                 type: asyncTypes.getGeolocation,
                 geopoint: {
                     lat: latitude,
-                    long: longitude
+                    lon: longitude
                 }
             }
             return action;

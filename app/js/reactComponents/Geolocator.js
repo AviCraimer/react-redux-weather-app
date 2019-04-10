@@ -35,16 +35,4 @@ class Geolocator extends React.Component {
     }
   }
 
-//React-redux connect
-const mapStateToProps = (storeState) =>  {
-
-    return {
-
-    }
-}
-
-// export default connect(
-//     mapStateToProps
-//   )(Geolocator);
-
 export default Geolocator;

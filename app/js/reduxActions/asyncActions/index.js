@@ -1,13 +1,14 @@
 import {dispatch} from '../../reduxStore';
 import _loadLocalStorage from './loadLocalStorage';
 import _getGeolocation from './getGeolocation';
-
-//This is a custom written alternative to Redux-thunk or other middle-ware, that I wrote myself to handle aynchronus action creation and dispatching. It uses vanilla JavaScript promises to get the job done.
+import _getLocalWeatherData from './getLocalWeatherData';
+//This is a custom written alternative to Redux-thunk or other middle-ware that I wrote myself to handle aynchronus action creation and dispatching. It uses vanilla JavaScript promises to get the job done.
 
 
 let asyncActionCreators = {
     _loadLocalStorage,
-    _getGeolocation
+    _getGeolocation,
+    _getLocalWeatherData
 };
 
 
@@ -49,6 +50,7 @@ for (const key in asyncActionCreators) {
 //Named Exports of each action creator
 export const {
     loadLocalStorage,
-    getGeolocation
+    getGeolocation,
+    getLocalWeatherData
 
 }  =  asyncActionCreators;
