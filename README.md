@@ -11,7 +11,10 @@ For production build, run the **gulp prod** task.
 There seems to be a problem with how some recent versions of Firefox handle geolocation, even from an https connection.
 There is some discussion of this problem [here](https://github.com/mdn/sprints/issues/1032).
 
-For me the geolocation works on Chrome for both Windows and Mac, and in Firefox on Windows but not on Mac. It also works on Android in Chrome and Firefox. I haven't tested it on iOS browsers yet.
+In testing, the geolocation works on Firefox for Windows, Android, and iOS, it throws an error on Mac desktop Firefox. 
+
+Works in Chrome across the board. 
+
 
 
 
