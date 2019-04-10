@@ -9,7 +9,7 @@ const getGeolocation = () => {
 
     const options = {
         enableHighAccuracy: true,
-        timeout: 20000,
+        timeout: 50000,
         maximumAge: 0
     };
 

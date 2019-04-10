@@ -30,30 +30,6 @@ fn.captilizeFirstChar = function (str) {
 }
 
 
-fn.listItemsToStringWithAnd = function (list) {
-    const readyToJoin = list.map((item, index, list) => {
-        if (index === list.length - 2) {
-            return item + ' and ';
-        } else if (index === list.length - 1) {
-            return item;
-        } else {
-            return item + ', '
-        }
-    });
-
-    return readyToJoin.join('');
-}
-
-fn.isPostalCode = function (string) { //Tests if a string is a postal code. Works with hypens and spaces.
-    const regex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
-
-    if (string.trim().match(regex)) {
-        return true;
-    } else {
-        return false;
-    } ;
-}
-
 
 //Better method of rounding to a given number of decimals. It ensures that edge cases don't round the wrong direction.
 fn.roundToXDecimalPlaces = function (number, numberOfDecimalPlaces) {
@@ -62,15 +38,6 @@ fn.roundToXDecimalPlaces = function (number, numberOfDecimalPlaces) {
 
 
 
-//Returns the dimensions of a specific HTML element
-fn.getDimensions = function (element) {
-        if (element) {
-            const boundingRect = element.getBoundingClientRect();
-            const {height,width} =  boundingRect;
-            return {height,width};
-        } else { //Gives an placeholder object in case element is not initialized yet
-            return {width: 0, height: 0}
-        }
-}
+
 
 export default fn;

@@ -1,10 +1,11 @@
 import {syncTypes} from './actionTypes';
 import {dispatch} from '../reduxStore';
-// import { bindActionCreators } from 'redux';
 
-// console.log('dispatch in syncActions', dispatch);
+//This is left as a place holder for any synchronous action creators. This is not currently used in this up.
+
 
 const syncActionCreators = {};
+
 
 syncActionCreators.windowResize = function (windowWidth) {
     const action = {
