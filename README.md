@@ -7,5 +7,11 @@ The default gulp task builds the project without minimizing JS and CSS, and usin
 
 For production build, run the **gulp prod** task.
 
-# Browser Security Issues with Geolocation
-The geolocation seems to be blocked in some browsers when running from local host, it should work on all modern browsers when it is deployed to a HTTPS url. It works from local host for me in Chrome on both Mac and Windows, and in Firefox on Windows but not on Mac. 
+# Firefox Geolocation Bug
+There seems to be a problem with how some recent versions of Firefox handle geolocation, even from an https connection.
+There is some discussion of this problem [here](https://github.com/mdn/sprints/issues/1032).
+
+For me the geolocation works on Chrome for both Windows and Mac, and in Firefox on Windows but not on Mac. It also works on Android in Chrome and Firefox. I haven't tested it on iOS browsers yet.
+
+
+
